@@ -804,8 +804,8 @@
       "name" : "Lade Daten",
       "outputPorts" : [ ],
       "position" : {
-        "x" : 824.2252199875544,
-        "y" : -728.3544395941792
+        "x" : 808.0,
+        "y" : -640.0
       },
       "processGroups" : [ ],
       "processors" : [ ],
@@ -1508,7 +1508,7 @@
   "parameterContexts" : { },
   "parameterProviders" : { },
   "snapshotMetadata" : {
-    "author" : "ordix",
+    "author" : "nifi-admin",
     "flowIdentifier" : "Freie-bung-1",
     "timestamp" : 0
   }
