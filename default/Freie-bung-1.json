@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1723786499718,
+    "description" : "### Übung 1\n- Hole Daten von dieser REST-API https://api.db-big-07.schulung.extern.gcp.ordix.de/data/ui/#!/Worker/worker_get \nDie URL für den Prozessor lautet https://api.db-big-07.schulung.extern.gcp.ordix.de/data/worker\n\nAlternativ generiere die Daten via GenerateRecord!\n\n- Filtere die Daten anhand der id. Alles unter oder gleich 250 nach “link” alles darüber nach “rechts”\n- Merge immer mindestens 10 Dateien zusammen, achte darauf, dass die JSON Struktur korrekt ist\n- Komprimiere den Inhalt\n- Schreibe die Daten auf das Dateisystem unter /home/ordix/uebung",
+    "identifier" : "Freie-bung-1",
+    "lastModifiedTimestamp" : 1723786499718,
+    "name" : "Freie Übung 1",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
