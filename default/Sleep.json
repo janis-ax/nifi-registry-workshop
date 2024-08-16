@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1723803706055,
+    "description" : "Ein beispielhafter Flow, wie man ein FlowFile warten lassen kann",
+    "identifier" : "Sleep",
+    "lastModifiedTimestamp" : 1723803706055,
+    "name" : "Sleep",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
