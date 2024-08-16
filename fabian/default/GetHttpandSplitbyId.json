@@ -667,8 +667,8 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "920dacfa-923c-37a5-874f-b3356599697f",
       "position" : {
-        "x" : 1408.0,
-        "y" : -96.0
+        "x" : 1208.0,
+        "y" : 64.0
       }
     }, {
       "componentType" : "FUNNEL",
@@ -725,6 +725,7 @@
     "maxConcurrentTasks" : 1,
     "name" : "Get Http and Split by Id",
     "outputPorts" : [ ],
+    "parameterContextName" : "ParametersWithUrlComponetns",
     "position" : {
       "x" : 0.0,
       "y" : 0.0
@@ -821,7 +822,7 @@
       },
       "properties" : {
         "Create Missing Directories" : "true",
-        "Directory" : "/home/ordix/uebung",
+        "Directory" : "#{BaseUrl}#{Location}",
         "Conflict Resolution Strategy" : "fail"
       },
       "propertyDescriptors" : {
@@ -1962,8 +1963,46 @@
   },
   "flowEncodingVersion" : "1.0",
   "latest" : false,
-  "parameterContexts" : { },
-  "parameterProviders" : { },
+  "parameterContexts" : {
+    "parametersFPP" : {
+      "componentType" : "PARAMETER_CONTEXT",
+      "inheritedParameterContexts" : [ ],
+      "name" : "parametersFPP",
+      "parameterGroupName" : "parametersFPP",
+      "parameterProvider" : "d0a13613-bb7b-1dfe-95d7-4aa0e3acf919",
+      "parameters" : [ {
+        "name" : "BaseUrl",
+        "provided" : true,
+        "sensitive" : false,
+        "value" : "/home/ordix"
+      } ],
+      "synchronized" : true
+    },
+    "ParametersWithUrlComponetns" : {
+      "componentType" : "PARAMETER_CONTEXT",
+      "inheritedParameterContexts" : [ "parametersFPP" ],
+      "name" : "ParametersWithUrlComponetns",
+      "parameters" : [ {
+        "description" : "",
+        "name" : "Location",
+        "provided" : false,
+        "sensitive" : false,
+        "value" : "/uebung"
+      } ]
+    }
+  },
+  "parameterProviders" : {
+    "d0a13613-bb7b-1dfe-95d7-4aa0e3acf919" : {
+      "bundle" : {
+        "artifact" : "nifi-standard-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.0.0-M4"
+      },
+      "identifier" : "d0a13613-bb7b-1dfe-95d7-4aa0e3acf919",
+      "name" : "KubernetesSecretParameterProviderFPP",
+      "type" : "org.apache.nifi.parameter.KubernetesSecretParameterProvider"
+    }
+  },
   "snapshotMetadata" : {
     "author" : "a5cd1400-f6e8-47c7-8d8a-c6b6a3a2c37b",
     "flowIdentifier" : "GetHttpandSplitbyId",
