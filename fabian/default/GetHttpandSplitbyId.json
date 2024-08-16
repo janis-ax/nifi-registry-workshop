@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1723798576797,
+    "description" : "Get FlowFile and split on ID",
+    "identifier" : "GetHttpandSplitbyId",
+    "lastModifiedTimestamp" : 1723798576797,
+    "name" : "Get_Http_and_Split_by_Id",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
