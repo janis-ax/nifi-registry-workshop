@@ -24,6 +24,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "27966133-b1e8-339f-9c31-26d60b56ecf6",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "ee4e6ab3-3659-3b0f-ab21-5c2df5ea922a",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "page_not_found" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "a0bf4e37-a160-3ff5-9786-e3005321d5f3",
+        "name" : "WikiDateAsHtml",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "c41434e5-e8ae-3ffb-8265-08d25dcce704",
         "name" : "SetRecordField",
         "type" : "PROCESSOR"
@@ -43,36 +73,6 @@
         "groupId" : "flow-contents-group",
         "id" : "1b760780-6407-33ec-8741-a7f302c599ee",
         "name" : "CreateFlowFileJsonList",
-        "type" : "PROCESSOR"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "d60231e0-5883-3955-91c9-f4883d040da6",
-        "name" : "HtmlToMarkDownConverter",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "cb8e8663-1c20-36aa-a6de-71f785bab3db",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "success" ],
-      "source" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
-        "id" : "ef767ca6-189a-383a-9097-9843522af814",
-        "name" : "WikiDateAsHtml",
         "type" : "PROCESSOR"
       },
       "zIndex" : 0
@@ -114,13 +114,13 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "ef767ca6-189a-383a-9097-9843522af814",
+        "id" : "a0bf4e37-a160-3ff5-9786-e3005321d5f3",
         "name" : "WikiDateAsHtml",
         "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "c69ab426-252c-3599-89f8-c2186cd2db84",
+      "identifier" : "258184b1-232a-3c00-9615-81cee788a215",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
@@ -144,24 +144,24 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "27966133-b1e8-339f-9c31-26d60b56ecf6",
-        "name" : "Funnel",
-        "type" : "FUNNEL"
+        "id" : "d60231e0-5883-3955-91c9-f4883d040da6",
+        "name" : "HtmlToMarkDownConverter",
+        "type" : "PROCESSOR"
       },
       "flowFileExpiration" : "0 sec",
       "groupIdentifier" : "flow-contents-group",
-      "identifier" : "f5e0dfb9-fd12-3302-830c-520c232b7862",
+      "identifier" : "8d34cd8b-1b53-3cf1-b927-62e6c232396a",
       "labelIndex" : 0,
       "loadBalanceCompression" : "DO_NOT_COMPRESS",
       "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
       "name" : "",
       "partitioningAttribute" : "",
       "prioritizers" : [ ],
-      "selectedRelationships" : [ "page_not_found" ],
+      "selectedRelationships" : [ "success" ],
       "source" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "ef767ca6-189a-383a-9097-9843522af814",
+        "id" : "a0bf4e37-a160-3ff5-9786-e3005321d5f3",
         "name" : "WikiDateAsHtml",
         "type" : "PROCESSOR"
       },
@@ -505,47 +505,6 @@
     "processors" : [ {
       "autoTerminatedRelationships" : [ "original", "failure" ],
       "backoffMechanism" : "PENALIZE_FLOWFILE",
-      "bulletinLevel" : "DEBUG",
-      "bundle" : {
-        "artifact" : "python-extensions",
-        "group" : "org.apache.nifi",
-        "version" : "0.0.2-SNAPSHOT"
-      },
-      "comments" : "",
-      "componentType" : "PROCESSOR",
-      "concurrentlySchedulableTaskCount" : 1,
-      "executionNode" : "ALL",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "ef767ca6-189a-383a-9097-9843522af814",
-      "maxBackoffPeriod" : "10 mins",
-      "name" : "WikiDateAsHtml",
-      "penaltyDuration" : "30 sec",
-      "position" : {
-        "x" : -696.0,
-        "y" : -344.0
-      },
-      "properties" : { },
-      "propertyDescriptors" : {
-        "The language of the artikle" : {
-          "displayName" : "The language of the artikle",
-          "dynamic" : false,
-          "identifiesControllerService" : false,
-          "name" : "The language of the artikle",
-          "sensitive" : true
-        }
-      },
-      "retriedRelationships" : [ ],
-      "retryCount" : 10,
-      "runDurationMillis" : 25,
-      "scheduledState" : "ENABLED",
-      "schedulingPeriod" : "0 sec",
-      "schedulingStrategy" : "TIMER_DRIVEN",
-      "style" : { },
-      "type" : "python.WikiDateAsHtml",
-      "yieldDuration" : "1 sec"
-    }, {
-      "autoTerminatedRelationships" : [ "original", "failure" ],
-      "backoffMechanism" : "PENALIZE_FLOWFILE",
       "bulletinLevel" : "WARN",
       "bundle" : {
         "artifact" : "python-extensions",
@@ -626,6 +585,49 @@
       "schedulingStrategy" : "TIMER_DRIVEN",
       "style" : { },
       "type" : "python.CreateFlowFileJsonList",
+      "yieldDuration" : "1 sec"
+    }, {
+      "autoTerminatedRelationships" : [ "original", "failure" ],
+      "backoffMechanism" : "PENALIZE_FLOWFILE",
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "python-extensions",
+        "group" : "org.apache.nifi",
+        "version" : "0.0.2-SNAPSHOT"
+      },
+      "comments" : "",
+      "componentType" : "PROCESSOR",
+      "concurrentlySchedulableTaskCount" : 1,
+      "executionNode" : "ALL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "a0bf4e37-a160-3ff5-9786-e3005321d5f3",
+      "maxBackoffPeriod" : "10 mins",
+      "name" : "WikiDateAsHtml",
+      "penaltyDuration" : "30 sec",
+      "position" : {
+        "x" : -688.0,
+        "y" : -336.0
+      },
+      "properties" : {
+        "The language of the artikle" : "DE"
+      },
+      "propertyDescriptors" : {
+        "The language of the artikle" : {
+          "displayName" : "The language of the artikle",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "The language of the artikle",
+          "sensitive" : false
+        }
+      },
+      "retriedRelationships" : [ ],
+      "retryCount" : 10,
+      "runDurationMillis" : 25,
+      "scheduledState" : "ENABLED",
+      "schedulingPeriod" : "0 sec",
+      "schedulingStrategy" : "TIMER_DRIVEN",
+      "style" : { },
+      "type" : "python.WikiDateAsHtml",
       "yieldDuration" : "1 sec"
     }, {
       "autoTerminatedRelationships" : [ "original", "failure" ],
