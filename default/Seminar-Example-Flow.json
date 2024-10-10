@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1728559866039,
+    "description" : "A easy example flow for a seminar with mains all kinds of processor e.g. FlowFileTransform, FlowFileSource",
+    "identifier" : "Seminar-Example-Flow",
+    "lastModifiedTimestamp" : 1728559866039,
+    "name" : "Seminar Example Flow",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
