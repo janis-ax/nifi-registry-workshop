@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1728551173992,
+    "description" : "Enthält einen einfachen LookUp Workflow",
+    "identifier" : "LookUp-bung",
+    "lastModifiedTimestamp" : 1728551173992,
+    "name" : "LookUp Übung",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
