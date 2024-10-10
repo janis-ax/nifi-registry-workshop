@@ -647,8 +647,8 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "3d76c71f-7a30-334c-8c8a-9c3121e55d2d",
       "position" : {
-        "x" : -288.0,
-        "y" : 300.5
+        "x" : -304.0,
+        "y" : 312.0
       }
     }, {
       "componentType" : "FUNNEL",
