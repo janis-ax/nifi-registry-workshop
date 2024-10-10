@@ -9,7 +9,7 @@
     "versionCount" : 0
   },
   "flowContents" : {
-    "comments" : "",
+    "comments" : "https://www.alasdairb.com/posts/enriching-records-with-lookuprecord-rest-apis-in-nifi",
     "componentType" : "PROCESS_GROUP",
     "connections" : [ {
       "backPressureDataSizeThreshold" : "1 GB",
@@ -318,6 +318,106 @@
       },
       "scheduledState" : "DISABLED",
       "type" : "org.apache.nifi.json.JsonTreeReader"
+    }, {
+      "bulletinLevel" : "WARN",
+      "bundle" : {
+        "artifact" : "nifi-lookup-services-nar",
+        "group" : "org.apache.nifi",
+        "version" : "2.0.0-M4"
+      },
+      "comments" : "",
+      "componentType" : "CONTROLLER_SERVICE",
+      "controllerServiceApis" : [ {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.0.0-M4"
+        },
+        "type" : "org.apache.nifi.lookup.RecordLookupService"
+      }, {
+        "bundle" : {
+          "artifact" : "nifi-standard-services-api-nar",
+          "group" : "org.apache.nifi",
+          "version" : "2.0.0-M4"
+        },
+        "type" : "org.apache.nifi.lookup.LookupService"
+      } ],
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "c5a3c8ee-3148-3541-b115-f20e312b0c21",
+      "name" : "DatabaseRecordLookupService",
+      "properties" : {
+        "dbf-default-precision" : "10",
+        "dbrecord-lookup-clear-cache-on-enabled" : "true",
+        "dbrecord-lookup-cache-size" : "0",
+        "dbf-default-scale" : "0"
+      },
+      "propertyDescriptors" : {
+        "dbrecord-lookup-dbcp-service" : {
+          "displayName" : "Database Connection Pooling Service",
+          "dynamic" : false,
+          "identifiesControllerService" : true,
+          "name" : "dbrecord-lookup-dbcp-service",
+          "sensitive" : false
+        },
+        "dbf-default-precision" : {
+          "displayName" : "Default Decimal Precision",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbf-default-precision",
+          "sensitive" : false
+        },
+        "dbrecord-lookup-clear-cache-on-enabled" : {
+          "displayName" : "Clear Cache on Enabled",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbrecord-lookup-clear-cache-on-enabled",
+          "sensitive" : false
+        },
+        "dbrecord-lookup-cache-size" : {
+          "displayName" : "Cache Size",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbrecord-lookup-cache-size",
+          "sensitive" : false
+        },
+        "dbrecord-lookup-value-columns" : {
+          "displayName" : "Lookup Value Columns",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbrecord-lookup-value-columns",
+          "sensitive" : false
+        },
+        "dbrecord-lookup-key-column" : {
+          "displayName" : "Lookup Key Column",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbrecord-lookup-key-column",
+          "sensitive" : false
+        },
+        "Cache Expiration" : {
+          "displayName" : "Cache Expiration",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "Cache Expiration",
+          "sensitive" : false
+        },
+        "dbf-default-scale" : {
+          "displayName" : "Default Decimal Scale",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbf-default-scale",
+          "sensitive" : false
+        },
+        "dbrecord-lookup-table-name" : {
+          "displayName" : "Table Name",
+          "dynamic" : false,
+          "identifiesControllerService" : false,
+          "name" : "dbrecord-lookup-table-name",
+          "sensitive" : false
+        }
+      },
+      "scheduledState" : "DISABLED",
+      "type" : "org.apache.nifi.lookup.db.DatabaseRecordLookupService"
     }, {
       "bulletinLevel" : "WARN",
       "bundle" : {
@@ -676,6 +776,21 @@
       },
       "width" : 200.0,
       "zIndex" : 0
+    }, {
+      "componentType" : "LABEL",
+      "groupIdentifier" : "flow-contents-group",
+      "height" : 32.0,
+      "identifier" : "0364294c-9b55-33a5-9baf-225a10221ff0",
+      "label" : "https://www.alasdairb.com/posts/enriching-records-with-lookuprecord-rest-apis-in-nifi",
+      "position" : {
+        "x" : -576.0,
+        "y" : -488.0
+      },
+      "style" : {
+        "font-size" : "12px"
+      },
+      "width" : 488.0,
+      "zIndex" : 0
     } ],
     "maxConcurrentTasks" : 1,
     "name" : "LookUp Übung",
@@ -714,7 +829,7 @@
         "result-record-path" : "/geo",
         "record-writer" : "46336e76-9ffe-3124-8844-763bc410023c",
         "record-reader" : "634dfd62-0ec7-3ce3-9388-c7a474b30351",
-        "lookup-service" : "40a6dbc0-4b26-38a9-951d-5c86f6df235e",
+        "lookup-service" : "c5a3c8ee-3148-3541-b115-f20e312b0c21",
         "record-update-strategy" : "use-property",
         "ip_addr" : "/ip"
       },
