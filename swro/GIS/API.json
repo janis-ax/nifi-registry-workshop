@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1736329235069,
+    "description" : "Hier liegen die Dataflows für den API-Router für die GIS-Schnittstelle. Bei Fragen bitte an Valentin wenden. :) ",
+    "identifier" : "API",
+    "lastModifiedTimestamp" : 1736329235069,
+    "name" : "API",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
