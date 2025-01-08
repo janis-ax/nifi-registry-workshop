@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1736329132276,
+    "description" : "Hier liegen alle Dataflows zum Usecase NELO -> GIS. Bei Fragen bitte an Stephan! ;) ",
+    "identifier" : "NELO",
+    "lastModifiedTimestamp" : 1736329132276,
+    "name" : "NELO",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
