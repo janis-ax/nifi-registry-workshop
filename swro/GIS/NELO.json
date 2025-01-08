@@ -9,7 +9,7 @@
     "versionCount" : 0
   },
   "flowContents" : {
-    "comments" : "",
+    "comments" : "Das ist der NELO Flow von Stephan.",
     "componentType" : "PROCESS_GROUP",
     "connections" : [ ],
     "controllerServices" : [ ],
