@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1736329989218,
+    "description" : "Flow 1 von NELO",
+    "identifier" : "1-NELO",
+    "lastModifiedTimestamp" : 1736329989218,
+    "name" : "1 - NELO",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
