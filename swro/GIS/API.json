@@ -23,6 +23,14 @@
     "funnels" : [ {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
+      "identifier" : "64708bc2-6ba4-39c1-8e31-6623b9be75a8",
+      "position" : {
+        "x" : -382.0000098850735,
+        "y" : 1.4999650966121862
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
       "identifier" : "15c73f54-842f-399d-b60b-92dc65c6e8a0",
       "position" : {
         "x" : -109.0000098850735,
