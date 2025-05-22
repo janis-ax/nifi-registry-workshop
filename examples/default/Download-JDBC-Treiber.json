@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1747899860944,
+    "description" : "Dieser Flow lädt benötige JDBC Treiber, wie MySQL oder PostgresQL herunter.",
+    "identifier" : "Download-JDBC-Treiber",
+    "lastModifiedTimestamp" : 1747899860944,
+    "name" : "Download JDBC-Treiber",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
