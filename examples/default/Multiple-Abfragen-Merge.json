@@ -1,0 +1,11 @@
+{
+  "flow" : {
+    "createdTimestamp" : 1748350154371,
+    "description" : "Diese Prozessgruppe macht mehrere Abfragen gegen eine API und merged die FlowFiles dann mit der Bin-Packing Strategie.",
+    "identifier" : "Multiple-Abfragen-Merge",
+    "lastModifiedTimestamp" : 1748350154371,
+    "name" : "Multiple Abfragen - Merge",
+    "versionCount" : 0
+  },
+  "latest" : false
+}
