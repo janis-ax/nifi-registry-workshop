@@ -28,6 +28,36 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
+        "id" : "3ac68d52-6587-3c67-98d1-4244c90f63e2",
+        "name" : "Funnel",
+        "type" : "FUNNEL"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "f1dcb4ff-e7dd-377f-9c7c-f700d1c18d90",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "other_nations" ],
+      "source" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "2ba96ee9-bce0-3615-aa72-07a86d1154bb",
+        "name" : "QueryRecord",
+        "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
         "id" : "2ba96ee9-bce0-3615-aa72-07a86d1154bb",
         "name" : "QueryRecord",
         "type" : "PROCESSOR"
@@ -118,35 +148,6 @@
       "destination" : {
         "comments" : "",
         "groupId" : "flow-contents-group",
-        "id" : "2ba96ee9-bce0-3615-aa72-07a86d1154bb",
-        "name" : "QueryRecord",
-        "type" : "PROCESSOR"
-      },
-      "flowFileExpiration" : "0 sec",
-      "groupIdentifier" : "flow-contents-group",
-      "identifier" : "85ee2788-46ad-3627-a0ff-c635e6932eac",
-      "labelIndex" : 0,
-      "loadBalanceCompression" : "DO_NOT_COMPRESS",
-      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-      "name" : "",
-      "partitioningAttribute" : "",
-      "prioritizers" : [ ],
-      "selectedRelationships" : [ "" ],
-      "source" : {
-        "groupId" : "flow-contents-group",
-        "id" : "99c22a5c-46e9-39f9-bf8b-db5a476ace20",
-        "name" : "JSON-Array",
-        "type" : "INPUT_PORT"
-      },
-      "zIndex" : 0
-    }, {
-      "backPressureDataSizeThreshold" : "1 GB",
-      "backPressureObjectThreshold" : 10000,
-      "bends" : [ ],
-      "componentType" : "CONNECTION",
-      "destination" : {
-        "comments" : "",
-        "groupId" : "flow-contents-group",
         "id" : "318427b7-34f0-3954-a791-a5d7a4fdc37e",
         "name" : "Funnel",
         "type" : "FUNNEL"
@@ -167,6 +168,35 @@
         "id" : "2ba96ee9-bce0-3615-aa72-07a86d1154bb",
         "name" : "QueryRecord",
         "type" : "PROCESSOR"
+      },
+      "zIndex" : 0
+    }, {
+      "backPressureDataSizeThreshold" : "1 GB",
+      "backPressureObjectThreshold" : 10000,
+      "bends" : [ ],
+      "componentType" : "CONNECTION",
+      "destination" : {
+        "comments" : "",
+        "groupId" : "flow-contents-group",
+        "id" : "2ba96ee9-bce0-3615-aa72-07a86d1154bb",
+        "name" : "QueryRecord",
+        "type" : "PROCESSOR"
+      },
+      "flowFileExpiration" : "0 sec",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "85ee2788-46ad-3627-a0ff-c635e6932eac",
+      "labelIndex" : 0,
+      "loadBalanceCompression" : "DO_NOT_COMPRESS",
+      "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+      "name" : "",
+      "partitioningAttribute" : "",
+      "prioritizers" : [ ],
+      "selectedRelationships" : [ "" ],
+      "source" : {
+        "groupId" : "flow-contents-group",
+        "id" : "99c22a5c-46e9-39f9-bf8b-db5a476ace20",
+        "name" : "JSON-Array",
+        "type" : "INPUT_PORT"
       },
       "zIndex" : 0
     }, {
@@ -252,24 +282,32 @@
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "318427b7-34f0-3954-a791-a5d7a4fdc37e",
       "position" : {
-        "x" : -448.0,
-        "y" : 408.0
+        "x" : -496.0,
+        "y" : 400.0
+      }
+    }, {
+      "componentType" : "FUNNEL",
+      "groupIdentifier" : "flow-contents-group",
+      "identifier" : "3ac68d52-6587-3c67-98d1-4244c90f63e2",
+      "position" : {
+        "x" : 384.0,
+        "y" : 272.0
       }
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "f390934c-0a28-3f32-88a1-feb4fe0c50a2",
       "position" : {
-        "x" : -80.0,
-        "y" : 528.0
+        "x" : -248.0,
+        "y" : 520.0
       }
     }, {
       "componentType" : "FUNNEL",
       "groupIdentifier" : "flow-contents-group",
       "identifier" : "066a1156-18ea-3292-91c8-f013a5ea7265",
       "position" : {
-        "x" : 256.0,
-        "y" : 408.0
+        "x" : 40.0,
+        "y" : 416.0
       }
     } ],
     "identifier" : "flow-contents-group",
@@ -290,7 +328,7 @@
     } ],
     "labels" : [ ],
     "maxConcurrentTasks" : 1,
-    "name" : "API - Demo",
+    "name" : "API-Calls und QueryRecord",
     "outputPorts" : [ ],
     "position" : {
       "x" : 0.0,
@@ -316,7 +354,7 @@
       "name" : "Abfrage - IT",
       "penaltyDuration" : "30 sec",
       "position" : {
-        "x" : 168.0,
+        "x" : 176.0,
         "y" : -208.0
       },
       "properties" : {
@@ -631,6 +669,7 @@
         "germany" : "SELECT * FROM FLOWFILE WHERE countryCode = 'DE'",
         "record-reader" : "788287dc-2005-3ff0-bb70-6fe39047ad13",
         "include-zero-record-flowfiles" : "false",
+        "other_nations" : "SELECT * \nFROM FLOWFILE\nWHERE countryCode <> 'US'\n\tAND countryCode <> 'DE'\n\tAND countryCode <> 'IT'",
         "dbf-default-scale" : "0",
         "us" : "SELECT * FROM FLOWFILE WHERE countryCode = 'US'"
       },
@@ -675,6 +714,13 @@
           "dynamic" : false,
           "identifiesControllerService" : false,
           "name" : "include-zero-record-flowfiles",
+          "sensitive" : false
+        },
+        "other_nations" : {
+          "displayName" : "other_nations",
+          "dynamic" : true,
+          "identifiesControllerService" : false,
+          "name" : "other_nations",
           "sensitive" : false
         },
         "dbf-default-scale" : {
